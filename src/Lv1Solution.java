@@ -23,4 +23,10 @@ public class Lv1Solution {
         int answer = 2022 - age + 1;
         return answer;
     }
+
+    // 5. 숫자 비교하기
+    public int solution5(int num1, int num2) {
+        int answer = num1 == num2 ? 1 : -1;
+        return answer;
+    }
 }
