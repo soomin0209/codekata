@@ -11,4 +11,10 @@ public class Lv1Solution {
         int answer = num1 * num2;
         return answer;
     }
+
+    // 3. 몫 구하기
+    public int solution3(int num1, int num2) {
+        int answer = num1 / num2;
+        return answer;
+    }
 }
