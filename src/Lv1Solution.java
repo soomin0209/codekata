@@ -29,4 +29,10 @@ public class Lv1Solution {
         int answer = num1 == num2 ? 1 : -1;
         return answer;
     }
+
+    // 6. 두 수의 합
+    public int solution6(int num1, int num2) {
+        int answer = num1 + num2;
+        return answer;
+    }
 }
