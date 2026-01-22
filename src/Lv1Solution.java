@@ -99,4 +99,14 @@ public class Lv1Solution {
         double answer = sum / arr.length;
         return answer;
     }
+
+    // 13. 자릿수 더하기
+    public int solution13(int n) {
+        int answer = 0;
+        while (n != 0) {
+            answer += n % 10;
+            n /= 10;
+        }
+        return answer;
+    }
 }
