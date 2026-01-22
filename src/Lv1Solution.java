@@ -89,4 +89,14 @@ public class Lv1Solution {
         }
         return answer;
     }
+
+    // 12. 평균 구하기
+    public double solution12(int[] arr) {
+        double sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        double answer = sum / arr.length;
+        return answer;
+    }
 }
