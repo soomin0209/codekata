@@ -86,4 +86,14 @@ public class Lv2Solution {
         int answer = Integer.parseInt(s);
         return answer;
     }
+
+    // 19. 정수 제곱근 판별
+    public long solution19(long n) {
+        for (int x = 0; Math.pow(x, 2) <= n; x++) {
+            if (n == Math.pow(x, 2)) {
+                return (long) Math.pow(x + 1, 2);
+            }
+        }
+        return -1;
+    }
 }
