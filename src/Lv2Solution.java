@@ -80,4 +80,10 @@ public class Lv2Solution {
 
         return answer;
     }
+
+    // 18. 문자열을 정수로 바꾸기
+    public int solution18(String s) {
+        int answer = Integer.parseInt(s);
+        return answer;
+    }
 }
