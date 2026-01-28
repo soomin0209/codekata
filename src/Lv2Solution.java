@@ -108,4 +108,22 @@ public class Lv2Solution {
         long answer = Long.parseLong(joinedArr);
         return answer;
     }
+
+    // 21. 하샤드 수
+    public boolean solution21(int x) {
+        boolean answer = false;
+        int sum = 0;
+        int original = x;
+
+        while (x != 0) {
+            sum += x % 10;
+            x /= 10;
+        }
+
+        if (original % sum == 0) {
+            answer = true;
+        }
+
+        return answer;
+    }
 }
