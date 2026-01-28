@@ -200,4 +200,52 @@ public class Lv2Solution {
         }
         return answer;
     }
+
+    // 25. 나누어 떨어지는 숫자 배열
+    public int[] solution25(int[] arr, int divisor) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % divisor == 0) {
+                list.add(arr[i]);
+            }
+        }
+
+        if (list.size() == 0) {
+            int[] answer = {-1};
+            return answer;
+        }
+
+        Collections.sort(list);
+
+        int[] answer = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i);
+        }
+
+        return answer;
+    }
+
+    // 25. 나누어 떨어지는 숫자 배열 (개선)
+    public int[] solution25Develop(int[] arr, int divisor) {
+        List<Integer> list = new ArrayList<>();
+
+        for (int n : arr) {
+            if (n % divisor == 0) {
+                list.add(n);
+            }
+        }
+
+        if (list.isEmpty()) {
+            return new int[]{-1};
+        }
+
+        Collections.sort(list);
+
+        int[] answer = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i);
+        }
+
+        return answer;
+    }
 }
