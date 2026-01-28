@@ -126,4 +126,42 @@ public class Lv2Solution {
 
         return answer;
     }
+
+    // 22. 두 정수 사이의 합
+    public long solution22(int a, int b) {
+        long answer = 0;
+        int num1 = 0;
+        int num2 = 0;
+
+        if (a > b) {
+            num1 = b;
+            num2 = a;
+        } else if (b > a) {
+            num1 = a;
+            num2 = b;
+        } else {
+            answer = (long) a;
+            return answer;
+        }
+
+        for (int i = num1; i <= num2; i++) {
+            answer += (long) i;
+        }
+
+        return answer;
+    }
+
+    // 22. 두 정수 사이의 합 (개선)
+    public long solution22Develop(int a, int b) {
+        long answer = 0;
+
+        int start = Math.min(a, b);
+        int end = Math.max(a, b);
+
+        for (int i = start; i <= end; i++) {
+            answer += i;
+        }
+
+        return answer;
+    }
 }
