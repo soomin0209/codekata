@@ -268,4 +268,14 @@ public class Lv2Solution {
         String answer = "*".repeat(length - 4) + phone_number.substring(length - 4);
         return answer;
     }
+
+    // 28. 없는 숫자 더하기
+    public int solution28(int[] numbers) {
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+        int answer = 45 - sum;
+        return answer;
+    }
 }
