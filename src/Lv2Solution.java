@@ -315,4 +315,17 @@ public class Lv2Solution {
         }
         return answer;
     }
+
+    // 31. 수박수박수박수박수박수?
+    public String solution31(int n) {
+        String answer = "";
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 != 0) {
+                answer = answer.concat("수");
+            } else {
+                answer = answer.concat("박");
+            }
+        }
+        return answer;
+    }
 }
