@@ -384,4 +384,17 @@ public class Lv2Solution {
 
         return answer;
     }
+
+    // 35. 부족한 금액 계산하기
+    public long solution(int price, int money, int count) {
+        long total = 0;
+        for (int i = 1; i <= count; i ++) {
+            total += i * price;
+        }
+        long answer = total - money;
+        if (answer < 0) {
+            return 0;
+        }
+        return answer;
+    }
 }
