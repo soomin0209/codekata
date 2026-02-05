@@ -370,4 +370,18 @@ public class Lv2Solution {
         }
         return answer;
     }
+
+    // 34. 문자열 내림차순으로 배치하기
+    public String solution34(String s) {
+        String answer = "";
+
+        String[] arr = s.split("");
+        Arrays.sort(arr, Collections.reverseOrder());
+
+        for (String str : arr) {
+            answer = answer.concat(str);
+        }
+
+        return answer;
+    }
 }
