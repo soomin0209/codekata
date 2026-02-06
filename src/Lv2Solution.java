@@ -397,4 +397,18 @@ public class Lv2Solution {
         }
         return answer;
     }
+
+    // 36. 문자열 다루기 기본
+    public boolean solution36(String s) {
+        boolean answer = true;
+        if (s.length() != 4 && s. length() != 6) {
+            answer = false;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if (Character.isDigit(s.charAt(i)) == false) {
+                answer = false;
+            }
+        }
+        return answer;
+    }
 }
