@@ -452,4 +452,15 @@ public class Lv2Solution {
         int[] answer = {gcd, gld};
         return answer;
     }
+
+    // 40. 3진법 뒤집기
+    public int solution40(int n) {
+        String ternary = Integer.toString(n, 3);
+
+        StringBuffer sb = new StringBuffer(ternary);
+        String reverseTernary = sb.reverse().toString();
+
+        int answer = Integer.parseInt(reverseTernary, 3);
+        return answer;
+    }
 }
