@@ -433,4 +433,23 @@ public class Lv2Solution {
             System.out.println();
         }
     }
+
+    // 39. 최대공약수와 최대공배수
+    // 최대공약수 (유클리드 호제법)
+    int getGcd(int n, int m) {
+        int r;
+        while (m > 0) {
+            r = n % m;
+            n = m;
+            m = r;
+        }
+        return n;
+    }
+
+    public int[] solution39(int n, int m) {
+        int gcd = getGcd(n, m);
+        int gld = n * m / gcd;
+        int[] answer = {gcd, gld};
+        return answer;
+    }
 }
