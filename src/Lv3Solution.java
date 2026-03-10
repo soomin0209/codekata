@@ -53,4 +53,21 @@ public class Lv3Solution {
 
         return answer;
     }
+
+    // 44. 최소직사각형
+    public int solution44(int[][] sizes) {
+        int width = 0;
+        int height = 0;
+
+        for (int i = 0; i < sizes.length; i++) {
+            int w = Math.min(sizes[i][0], sizes[i][1]);
+            int h = Math.max(sizes[i][0], sizes[i][1]);
+
+            width = Math.max(width, w);
+            height = Math.max(height, h);
+        }
+
+        int answer = width * height;
+        return answer;
+    }
 }
